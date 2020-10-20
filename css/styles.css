@@ -31,3 +31,14 @@ nav > ul > li {
 nav a {
     text-decoration: none;
 }
+
+/* Main */
+section {
+    width: 100%;
+    padding: 1em 4em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
