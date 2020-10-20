@@ -1,0 +1,33 @@
+/* Set Box Sizing - from https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: lightblue;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav > ul > li {
+    flex: 1;
+    margin: 1em;
+}
+
+nav a {
+    text-decoration: none;
+}
