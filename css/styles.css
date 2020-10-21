@@ -195,3 +195,15 @@ form button:hover {
 .grass {
     background-color: lightgreen;
 }
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+footer>div {
+    max-width: 80%;
+    text-align: center;
+}
