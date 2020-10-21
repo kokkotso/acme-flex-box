@@ -26,6 +26,16 @@ header {
         flex-direction: column;
         justify-content: center;
     }
+
+    header #logo a {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        position: static;
+    }
 }
 
 nav > ul {
@@ -38,6 +48,22 @@ nav > ul > li {
     flex: 1;
     margin: 1em;
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+    nav > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav > ul > li {
+        margin: 10px;
+    }
+
+    nav a {
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
 header a {
@@ -71,6 +97,12 @@ main {
     }
 }
 
+@media screen and (max-width: 480px) {
+    main {
+        margin-top: 0px;
+    }
+}
+
 section {
     width: 100%;
     padding: 1em 4em;
@@ -79,6 +111,23 @@ section {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        padding: 1em 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top {
+        justify-content: center;
+    }
+
+    h1 {
+        max-width: 90%;
+        text-align: center;
+    }
 }
 
 /* Form */
@@ -142,8 +191,7 @@ form button:hover {
 
 /* Card */
 .card {
-    flex: 1;
-    min-width: 300px;
+    flex: 1 1 300px;
     padding: 1em 2em 1em 2em;
     margin: 1em;
     border: 1px solid black;
@@ -203,7 +251,7 @@ footer {
     justify-content: center;
 }
 
-footer>div {
+footer > div {
     max-width: 80%;
     text-align: center;
 }
