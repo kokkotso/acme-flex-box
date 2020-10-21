@@ -107,6 +107,14 @@ form button {
     align-items: center;
 }
 
+.card img {
+    width: 100%;
+}
+
+.card .image {
+    margin-bottom: 1em;
+}
+
 .card h3 {
     margin: 0.5em;
 }
